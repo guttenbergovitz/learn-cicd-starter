@@ -3,13 +3,14 @@ name: ci
 on:
   pull_request:
     branches: [main]
+
 jobs:
   tests:
     name: Tests
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out Code
+      - name: Check out code
         uses: actions/checkout@v4
 
       - name: Set up Go
